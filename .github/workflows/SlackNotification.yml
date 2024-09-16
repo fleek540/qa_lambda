@@ -16,6 +16,6 @@ jobs:
             'Content-Type' = 'application/json'
           }
           $body = @{
-            text = "Mobile App only Test Cases (PB_STG_09092024). Report URL: <https://links.lambdatest.com/appautomation/7XEASP72I2UJ67VRIPJM9OYVOQF7SH9BH84NOEORDT70GQ75V67WDRNXEPP4KOIM>"
+            text = "STG ENV Mobile App only Test Cases (PB_STG_09092024). Report URL: <https://links.lambdatest.com/appautomation/7XEASP72I2UJ67VRIPJM9OYVOQF7SH9BH84NOEORDT70GQ75V67WDRNXEPP4KOIM>"
           } | ConvertTo-Json
           Invoke-RestMethod -Uri $env:SLACK_WEBHOOK -Method Post -Headers $headers -Body $body
