@@ -16,6 +16,6 @@ jobs:
             'Content-Type' = 'application/json'
           }
           $body = @{
-            text = "STG ENV Mobile Alchemy and Impact Hub Test Cases. Report URL: <https://automation.lambdatest.com/share?shareId=JUUMPHUC3VKGY5FI2NG60893SPPPACCGRY3YTYS578UV2AF3ZGP6XUS0N988UZSV&isThemeEnabled=true&themeVersion=v2>"
+            text = "QA ENV CMS and Impact Hub Test Cases. Report URL: <https://automation.lambdatest.com/share?shareId=I6BTXZ57BVGM4FF8GUJ0WPDD1ML2HCRHUB5Y0KFDE0T4QKSDETN8EMYYPJ5ZXRUG&isThemeEnabled=true&themeVersion=v2>"
           } | ConvertTo-Json
           Invoke-RestMethod -Uri $env:SLACK_WEBHOOK -Method Post -Headers $headers -Body $body
