@@ -16,6 +16,6 @@ jobs:
             'Content-Type' = 'application/json'
           }
           $body = @{
-            text = "QA Env CMS, Alchemy and Impact Hub Cases automation report as on 4th October 2024. Report URL: <https://automation.lambdatest.com/share?shareId=TJ2ZIBGS8VNBI3UY7SMJ6OBQWXY5U9JPNO9XX05UQSRU7CSAUW8GKZCGQNKAMRIN&isThemeEnabled=true&themeVersion=v2>"
+            text = "QA Alchemy and Impact Hub Cases automation report as on 22nd October 2024. Report URL: <https://automation.lambdatest.com/share?shareId=KORG99FVHU6MOMVE24X9ZP3RP5Z6G2K1QIZH7AF33SW1Q9DCLKB1ZZ27GCNK8I3E&isThemeEnabled=true&themeVersion=v2>"
           } | ConvertTo-Json
           Invoke-RestMethod -Uri $env:SLACK_WEBHOOK -Method Post -Headers $headers -Body $body
